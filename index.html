@@ -25,13 +25,14 @@
   <header class="page-header">
     <div class="container header-container">
       <nav class="navi">
-        <a href="./index.html" class="navi-logo">Web<span class="navi-logo-text">Studio</span></a>
+        <a href="./index.html" class="logo navi-logo">Web<span class="navi-logo-text">Studio</span></a>
         <ul class="header-navi">
           <li class="header-navi-link"><a href="./index.html" class="navi-link studio">Studio</a></li>
           <li class="header-navi-link"><a href="" class="navi-link">Portfolio</a></li>
           <li class="header-navi-link"><a href="" class="navi-link">Contacts</a></li>
         </ul>
       </nav>
+
       <address class="adres">
         <ul class="header-adres-list">
           <li>
@@ -42,18 +43,22 @@
           </li>
         </ul>
       </address>
+
+      <button class="burger-btn" type="button"><svg class="burger-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg></button>
     </div>
   </header>
   <main>
     <!--Перша секція головної сторінки.Назва і кнопка.-->
-    <section class="hero">
+    <section class="hero hidden">
       <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button type="button" class="hero-button">Order Service</button>
       </div>
     </section>
     <!--Друга секція.Містить іконки і текстовий контент.-->
-    <section class="section-advantages">
+    <section class="section-advantages hidden">
       <div class="container">
         <h2 class="visually-hidden">Advantages</h2>
         <ul class="advantages">
@@ -101,7 +106,7 @@
       </div>
     </section>
     <!--Третя секція.Містить картки з фото членів команди,їх посади,соц мережі.-->
-    <section class="team">
+    <section class="team hidden">
       <div class="container">
         <h2 class="team-title">Our Team</h2>
         <ul class="container-team-list">
@@ -257,7 +262,7 @@
       </div>
     </section>
     <!--Четверта секія.Містить контент,який розробляє команда + фото.-->
-    <section class="portfolio">
+    <section class="portfolio hidden">
       <div class="container">
         <h2 class="portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-job-list">
@@ -333,10 +338,10 @@
   </main>
 
   <!--Підвал сторінки.Логотип,текст,посилання на соц мережі.-->
-  <footer class="footer">
+  <footer class="footer hidden">
     <div class="container footer-info">
       <div class="box-logo-p">
-        <a href="./index.html" class="footer-logo">Web<span class="footer-logo-text">Studio</span></a>
+        <a href="./index.html" class="logo footer-logo">Web<span class="footer-logo-text">Studio</span></a>
         <p class="footer-text">
           Increase the flow of customers and sales for your business with
           digital marketing & growth solutions.
@@ -390,7 +395,7 @@
     </div>
   </footer>
   <!--Overlay з Модальним вікном-->
-  <div class="modal-overlay">
+  <div class="modal-overlay hidden">
     <div class="modal">
       <button type="button" class="close-modal-btn"><svg class="close-modal-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-Close"></use>
