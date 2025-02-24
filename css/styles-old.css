@@ -2,87 +2,10 @@
 
 
 
-.navi {
-  display: flex;
-  align-items: center;
-}
 
-.navi-logo {
-  padding: 24px 0;
-  margin-right: 76px;
-}
 
-.navi-logo .navi-logo:hover,
-.navi-logo:focus {
-  color: #404bbf;
-}
 
-.header-navi {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
 
-.navi-link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  padding: 24px 0;
-  position: relative;
-  display: block;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navi-link:hover,
-.navi-link:focus {
-  color: #404bbf;
-}
-
-.navi-link.studio {
-  color: #404bbf;
-}
-
-.navi-link.studio::after,
-.navi-link.studio::after {
-  color: #404bbf;
-  content: "";
-  border-radius: 2px;
-  left: 0;
-  bottom: -1px;
-  width: 48px;
-  height: 4px;
-  position: absolute;
-  background: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.adres {
-  font-style: normal;
-  margin-left: auto;
-}
-
-.header-adres-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.adres-link {
-  display: block;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.adres-link:hover,
-.adres-link:focus {
-  color: #404bbf;
-}
 
 /* MAIN  */
 /*   HERO  */
@@ -149,28 +72,19 @@
   padding: 120px 0;
 }
 
-.advantages {
+.advantages-list {
   display: flex;
   align-items: center;
   gap: 24px;
   /* width: calc((100%-3 * 24) / 4);*/
 }
 
-.advantages-list {
+.advantages-item {
   display: block;
   width: 264px;
 }
 
-.icon-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #8e8f99;
-  margin-bottom: 8px;
-  border-radius: 4px;
-  height: 112px;
-  background: #f4f4fd;
-}
+
 
 .advantages-title {
   font-weight: 500;
@@ -375,7 +289,8 @@
   height: 100%;
   display: flex;
   z-index: 999;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /*opacity: 0;
   pointer-events: none;*/
 }
