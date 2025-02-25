@@ -652,6 +652,7 @@ ol {
     border-radius: 50%;
     background-color: #4d5ae5;
     fill: #f4f4fd;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-link:hover,
@@ -818,3 +819,223 @@ ol {
 /*   #endregion Portfolio   */
 
 /*   #endregion MAIN   */
+
+/*   #region Footer section   */
+
+.footer {
+    background-color: #2e2f42;
+}
+
+.footer-info {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.footer-logo-text {
+    color: #f4f4fd;
+}
+
+.footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    margin-bottom: 72px;
+}
+
+.media-icons-footer {
+    width: 208px;
+    height: 80px;
+    margin: 0 auto 72px;
+}
+
+.footer-txt {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.icons-footer {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-form-input {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 288px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    opacity: 0.3;
+    background-color: #2e2f42;
+    padding-left: 16px;
+    margin-bottom: 16px;
+}
+
+.footer-form-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+    opacity: 0.6;
+
+}
+
+
+.footer-form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    background-color: #4d5ae5;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border: none;
+    fill: #fff;
+    gap: 16px;
+}
+
+@media screen and (min-width:768px) {
+    .footer-info {
+        padding-left: 108px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .box-logo-p {
+        width: 264px;
+        height: 112px;
+
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: left;
+        margin-bottom: 16px;
+    }
+
+    .footer-text {
+        margin-bottom: 0;
+    }
+
+    .media-icons-footer {
+        margin: 0px;
+    }
+
+    .footer-txt {
+        text-align: left;
+    }
+
+    .footer-form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .footer-form-input {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width:1158px) {
+        .footer-info {
+            padding: 100px 16px;
+            flex-wrap: nowrap;
+            gap: 0;
+        }
+
+        .box-logo-p {
+            width: 264px;
+            height: 112px;
+            margin-right: 120px;
+        }
+
+        .media-icons-footer {
+            width: 208px;
+            height: 80px;
+            margin-right: 80px;
+        }
+    }
+
+
+    /*   #endregion Footer   */
+
+    /*   #region Overlay section   */
+
+
+    .modal-overlay {
+        background-color: rgba(46, 47, 66, 0.4);
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    .is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        padding: 72px 16px 24px;
+        max-width: 288px;
+        min-height: 623px;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+        background-color: #fcfcfc;
+        border-radius: 4px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    .modal-overlay:not(.is-open) .modal {
+        transform: translate(-50%, -100%);
+    }
+
+    .close-modal-btn {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+    }
+
+    /*   #endregion Overlay   */
