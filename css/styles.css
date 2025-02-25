@@ -920,6 +920,11 @@ ol {
     gap: 16px;
 }
 
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    border-color: #404bbf;
+}
+
 @media screen and (min-width:768px) {
     .footer-info {
         padding-left: 108px;
