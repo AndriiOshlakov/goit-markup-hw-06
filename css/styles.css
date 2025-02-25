@@ -1216,6 +1216,7 @@ input:focus+svg {
 
     .checkbox-wrap {
         display: flex;
+        align-items: center;
     }
 }
 
