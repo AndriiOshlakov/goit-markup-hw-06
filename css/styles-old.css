@@ -427,6 +427,8 @@ input:focus+svg {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+
 .comment::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
@@ -464,7 +466,7 @@ input:focus+svg {
 }
 
 
-.checkbox:checked+.modal-form-label-check .privacy-policy {
+.checkbox:checked+.modal-form-label-check .checkbox-custom {
   background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
@@ -476,12 +478,10 @@ input:focus+svg {
 
 .overlay-btn {
   display: block;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
   min-width: 169px;
@@ -496,7 +496,8 @@ input:focus+svg {
 .overlay-btn:hover,
 .overlay-btn:focus {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+  background: #404bbf;
+
 }
 
 .input-box {
