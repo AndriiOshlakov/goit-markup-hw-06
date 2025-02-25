@@ -1136,6 +1136,11 @@ input:focus+svg {
     border-color: #4D5AE5;
 }
 
+.modal-field-checkbox {
+    margin-top: 16px;
+}
+
+
 .modal-form-label-check {
     display: flex;
     align-items: center;
@@ -1205,7 +1210,7 @@ input:focus+svg {
     .modal {
         padding-left: 24px;
         padding-right: 24px;
-        max-width: 408px;
+        min-width: 408px;
         min-height: 584px;
     }
 
@@ -1214,11 +1219,6 @@ input:focus+svg {
     }
 }
 
-@media screen and (min-width:1158px) {
-    .container {
-        max-width: 1158px;
-        padding: 0 15px;
-    }
-}
+@media screen and (min-width:1158px) {}
 
 /*   #endregion Overlay   */
