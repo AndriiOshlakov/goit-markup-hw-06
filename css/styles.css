@@ -592,7 +592,8 @@ ol {
 
 .team {
     background-color: #f4f4fd;
-    padding: 96px 28px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .team-title {
@@ -672,9 +673,8 @@ ol {
 }
 
 @media screen and (min-width:768px) {
-    .team {
-        padding-left: 108px;
-        padding-right: 108px;
+    .team-box {
+        max-width: 584px;
     }
 
     .team-list {
